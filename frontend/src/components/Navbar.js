@@ -12,7 +12,7 @@ export const Navbar = () => {
                         <img className="image" src={logo} alt="img"/>
                         <div className="search">
                             <input type="text" className="input" placeholder="Nunca dejes de buscar"/>
-                            <a href="#" className="btn"><SearchIcon className="icon"/></a>                                            
+                            <a href="/items/search/:query" className="btn"><SearchIcon className="icon"/></a>                                            
                         </div>                    
                     </div>
                 </div>
