@@ -12,12 +12,17 @@ export const List = () => {
         /* console.log(response.statusText) */
         const resJson = await response.json()
         setProducts(resJson)
-        /* console.log(resJson) */
+        console.log(resJson)
+        let {msg} = products;      
+        msg.map((product) =>{            
+            return console.log(product.title)
+        })
     }
 
     useEffect(() =>{
         fetchApi()
     }, [])
+
 
     return (
         <React.Fragment>
@@ -32,6 +37,9 @@ export const List = () => {
                     </div>
                     <div className="row-2">
                         <h3 className="price">$1900</h3>
+                        {
+                            
+                        }
                         <p className="title">Mesa Mesita De Luz Vintage Retro Nordica Pino Con Cajones</p>
                     </div>
                     <div className="row-3">
