@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect, useLayoutEffect} from 'react'
 import mesita from '../assets/mesita.jpg'
 
 
+
 export const List = () => {
+
+    const url = 'http://localhost:4000/api/items/search/:query'
+    const [products, setProducts] = useState()
+    const fetchApi = async () => {
+        const response = await fetch(url)
+        /* console.log(response.statusText) */
+        const resJson = await response.json()
+        setProducts(resJson)
+        /* console.log(resJson) */
+    }
+
+    useEffect(() =>{
+        fetchApi()
+    }, [])
 
     return (
         <React.Fragment>
