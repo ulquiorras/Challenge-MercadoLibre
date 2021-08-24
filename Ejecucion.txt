@@ -1,0 +1,9 @@
+Frontend - yarn start
+Backend - npm run dev
+
+Tecnologias usadas:
+
+nodejs - Backend
+React y SCSS - Frontend
+
+Jeisson Damian Becerra Rodriguez 
